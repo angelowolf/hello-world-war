@@ -23,6 +23,22 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.1.1</version>
 			</plugin>
+			<plugin>
+	                <groupId>org.jboss.as.plugins</groupId>
+	                <artifactId>jboss-as-maven-plugin</artifactId>
+	                <version>7.9.Final</version>
+	                <configuration>
+	                	<hostname>192.168.0.42</hostname>
+	                	<port>9990</port>
+	                	<domain>
+		                	<server-groups>
+		                        <server-group>main-server-group</server-group>
+		                    </server-groups>
+	                    </domain>
+	                	<deployEnabled>true</deployEnabled>
+	                </configuration>
+	            </plugin>
+
 		</plugins>
 	</build>
 
