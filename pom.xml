@@ -27,7 +27,7 @@
 			<plugin>
 				<groupId>org.jboss.as.plugins</groupId>
 				<artifactId>jboss-as-maven-plugin</artifactId>
-				<version>7.5.Final</version>
+				<version>7.9.Final</version>
 				<configuration>
 					<hostname>host.docker.internal</hostname>
 					<port>9999</port>
